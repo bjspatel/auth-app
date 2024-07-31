@@ -21,6 +21,12 @@ const Register = () => {
       const token = await api.user.register(requestDto);
       return token;
     },
+    onSuccess: () => {
+      navigate("/login");
+    },
+    onError: error => {
+      console.error("Error registering: ", error);
+    },
   });
   const navigate = useNavigate();
 
@@ -28,7 +34,7 @@ const Register = () => {
     <div className="flex items-center justify-center h-screen">
       <Card className="mx-auto max-w-sm">
         <CardHeader className="gap-4 m-6">
-          <CardTitle className="text-2xl text-center">Recreate Auth</CardTitle>
+          <CardTitle className="text-2xl text-center">Register</CardTitle>
         </CardHeader>{" "}
         <CardContent>
           <div className="grid gap-4">
@@ -80,7 +86,6 @@ const Register = () => {
                     name: `${firstName} ${lastName}`,
                     password,
                   });
-                  navigate("/login");
                 } catch (error) {
                   alert("Bad Request");
                 }

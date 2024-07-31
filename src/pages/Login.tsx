@@ -22,7 +22,7 @@ const Login = () => {
     <div className="flex items-center justify-center h-screen">
       <Card className="w-full max-w-sm">
         <CardHeader className="gap-4 m-6">
-          <CardTitle className="text-2xl text-center">Recreate Auth</CardTitle>
+          <CardTitle className="text-2xl text-center">Login</CardTitle>
         </CardHeader>
         <CardContent className="grid gap-4">
           <div className="grid gap-2">
