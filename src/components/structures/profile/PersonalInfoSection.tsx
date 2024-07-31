@@ -58,12 +58,12 @@ const PersonalInfoSection = () => {
             Country
           </Label>
           <Input
-            id="about"
+            id="country"
             placeholder="Country"
             defaultValue={user?.country}
             onChange={e => onFieldChange("country")(e)}
           />
-          {errorMap.about && (
+          {errorMap.country && (
             <div className="text-sm text-destructive">{errorMap.country}</div>
           )}
         </div>
@@ -75,13 +75,13 @@ const PersonalInfoSection = () => {
             Phone
           </Label>
           <Input
-            id="about"
+            id="phone"
             placeholder="Phone"
             defaultValue={user?.phone}
             onChange={e => onFieldChange("phone")(e)}
           />
-          {errorMap.about && (
-            <div className="text-sm text-destructive">{errorMap.country}</div>
+          {errorMap.phone && (
+            <div className="text-sm text-destructive">{errorMap.phone}</div>
           )}
         </div>
       </div>

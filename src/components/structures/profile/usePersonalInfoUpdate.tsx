@@ -19,7 +19,7 @@ const profileUpdateSchema = z.object({
     z
       .string()
       .trim()
-      .regex(/^\d{10}$/, { message: "Invalid phone" })
+      .regex(/^(\d{10})?$/, { message: "Invalid phone" })
   ),
 });
 
