@@ -43,7 +43,7 @@ const Register = () => {
                 <Label htmlFor="first-name">First name</Label>
                 <Input
                   id="first-name"
-                  placeholder="Richard"
+                  placeholder="John"
                   onChange={e => setFirstName(e.target.value)}
                   required
                 />
@@ -52,7 +52,7 @@ const Register = () => {
                 <Label htmlFor="last-name">Last name</Label>
                 <Input
                   id="last-name"
-                  placeholder="Feynman"
+                  placeholder="Doe"
                   onChange={e => setLastName(e.target.value)}
                   required
                 />

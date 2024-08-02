@@ -7,7 +7,6 @@ const login = async (requestDto: LoginRequestDto): Promise<TokenDto> => {
     const { data } = await axiosInstance.post("/auth/login", requestDto);
     return data as TokenDto;
   } catch (error) {
-    console.log("Acios err: ", error);
     throw new Error("Unauthorized");
   }
 };
